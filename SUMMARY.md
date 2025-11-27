@@ -42,4 +42,3 @@
 * [Overview](resources/README.md)
 * [Contract Addresses](resources/contract-addresses.md)
 * [Community Links](resources/community-links.md)
-* [Brand Assets](resources/brand-assets.md)

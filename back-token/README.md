@@ -1,8 +1,8 @@
-# $BACK Token
+# Overview
 
 The native token powering the Silverback ecosystem.
 
----
+***
 
 ## Overview
 
@@ -12,7 +12,7 @@ The native token powering the Silverback ecosystem.
 
 **Silverback has your BACK.**
 
----
+***
 
 ## Core Utility
 
@@ -20,36 +20,28 @@ The native token powering the Silverback ecosystem.
 
 $BACK holders benefit from multiple revenue streams:
 
-- **DEX Protocol Fees** — Portion of swap fees across all pools
-- **Treasury Trading Profits** — Returns from Silverback AI agent's trading
-- **Cross-Chain Arbitrage** — Profits from multi-network opportunities
+* **DEX Protocol Fees** — Portion of swap fees across all pools
+* **Treasury Trading Profits** — Returns from Silverback AI agent's trading
+* **Cross-Chain Arbitrage** — Profits from multi-network opportunities
 
 ### Staking Rewards
 
 Stake $BACK to earn rewards from protocol revenue. Rewards are distributed through buybacks that fill staking pools, creating sustainable yield without inflation.
 
-### Governance
-
-$BACK holders participate in protocol decisions:
-- Fee parameter adjustments
-- New network deployments
-- Treasury allocation
-- Protocol upgrades
-
----
+***
 
 ## In This Section
 
-| Page | Description |
-|------|-------------|
-| [Tokenomics](tokenomics.md) | Supply, distribution, and mechanics |
-| [Staking & Rewards](staking-rewards.md) | How to stake and earn |
-| [Revenue Sharing](revenue-sharing.md) | How profits flow to holders |
+| Page                                    | Description                         |
+| --------------------------------------- | ----------------------------------- |
+| [Tokenomics](tokenomics.md)             | Supply, distribution, and mechanics |
+| [Staking & Rewards](staking-rewards.md) | How to stake and earn               |
+| [Revenue Sharing](revenue-sharing.md)   | How profits flow to holders         |
 
----
+***
 
 ## Quick Links
 
-- **Buy $BACK**: [Virtuals Protocol](https://virtuals.io)
-- **Contract Address**: See [Contract Addresses](../resources/contract-addresses.md)
-- **Chart**: Coming soon
+* **Buy $BACK**: [Virtuals Protocol](https://app.virtuals.io/prototypes/0x558881c4959e9cf961a7E1815FCD6586906babd2)
+* **Contract Address**: See [Contract Addresses](../resources/contract-addresses.md)
+* **Chart**: Coming soon

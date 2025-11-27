@@ -2,7 +2,7 @@
 
 Provide liquidity to earn trading fees on Silverback DEX.
 
----
+***
 
 ## How Liquidity Works
 
@@ -15,37 +15,39 @@ When you provide liquidity, you:
 
 **Example:** You deposit ETH + USDC. Every time someone swaps ETH↔USDC, you earn a share of the 0.3% fee.
 
----
+***
 
 ## Base Network Liquidity
 
 ### Pool Types
 
-**Classic (V2) Pools**
-- Simple 50/50 token ratio
-- Great for beginners
-- Liquidity spread across all prices
-- Earn fees on any trade in the pool
+**Classic  Pools**
 
-**Concentrated (V3) Pools**
-- Advanced — set custom price ranges
-- Higher capital efficiency
-- Earn more fees when price is in your range
-- Requires more active management
+* Simple 50/50 token ratio
+* Great for beginners
+* Liquidity spread across all prices
+* Earn fees on any trade in the pool
 
----
+**Concentrated  Pools**
 
-### Adding Liquidity (Classic V2)
+* Advanced — set custom price ranges
+* Higher capital efficiency
+* Earn more fees when price is in your range
+* Requires more active management
+
+***
+
+### Adding Liquidity (Classic )
 
 1. Navigate to **Pool** page
 2. Select **Base** network
 3. Click **"Add Liquidity"**
 4. Select two tokens for your pair
 5. Enter amount for the first token
-   - Second token auto-calculates to maintain 50/50 ratio
+   * Second token auto-calculates to maintain 50/50 ratio
 6. Review:
-   - Pool share you'll receive
-   - LP tokens you'll get
+   * Pool share you'll receive
+   * LP tokens you'll get
 7. Click **"Add Liquidity"**
 8. **Approve both tokens** (if first time)
 9. Confirm the transaction
@@ -53,28 +55,29 @@ When you provide liquidity, you:
 
 > **Note:** You must add both tokens in equal value. If you enter 1 ETH worth $2,000, you'll need $2,000 worth of the other token.
 
----
+***
 
-### Adding Liquidity (Concentrated V3)
+### Adding Liquidity (Concentrated )
 
 1. Navigate to **Pool** page
-2. Select **Base** network  
+2. Select **Base** network
 3. Click **"New Position"**
 4. Select token pair
 5. Choose fee tier (0.05%, 0.3%, or 1%)
 6. Set your price range:
-   - **Min Price**: Lower bound
-   - **Max Price**: Upper bound
+   * **Min Price**: Lower bound
+   * **Max Price**: Upper bound
 7. Enter deposit amounts
 8. Review position details
 9. Confirm transaction
 
 **Price Range Tips:**
-- Narrower range = More fees when in range, but risk going out of range
-- Wider range = Less fees, but more consistent earnings
-- Current price should be within your range to start earning
 
----
+* Narrower range = More fees when in range, but risk going out of range
+* Wider range = Less fees, but more consistent earnings
+* Current price should be within your range to start earning
+
+***
 
 ### Removing Liquidity (Base)
 
@@ -82,15 +85,15 @@ When you provide liquidity, you:
 2. Find your position under "Classic Positions" or "Concentrated Positions"
 3. Click **"Remove"** or **"Withdraw"**
 4. Choose how much to remove:
-   - 25% / 50% / 75% / 100%
-   - Or enter custom amount
+   * 25% / 50% / 75% / 100%
+   * Or enter custom amount
 5. Review what you'll receive:
-   - Original tokens
-   - Accumulated fees
+   * Original tokens
+   * Accumulated fees
 6. Confirm the transaction
 7. Tokens return to your wallet
 
----
+***
 
 ## Keeta Network Liquidity
 
@@ -102,13 +105,13 @@ On Keeta, you can create entirely new pools:
 2. Click **"Create New Pool"**
 3. Select two tokens
 4. Set initial amounts for both tokens
-   - This determines the starting price ratio
-   - Example: 100 KTA + 1000 USDC = 1 KTA costs 10 USDC
+   * This determines the starting price ratio
+   * Example: 100 KTA + 1000 USDC = 1 KTA costs 10 USDC
 5. Click **"Create Pool"**
 6. Confirm 3 transactions:
-   - Create pool structure
-   - Send token A
-   - Send token B
+   * Create pool structure
+   * Send token A
+   * Send token B
 7. Receive LP tokens
 
 ### Adding to Existing Pools
@@ -128,54 +131,56 @@ On Keeta, you can create entirely new pools:
 4. Confirm transaction
 5. Receive tokens proportionally based on current pool ratio
 
----
+***
 
 ## Understanding LP Tokens
 
 ### What Are LP Tokens?
 
 LP tokens are proof of your deposit. They represent:
-- Your share of the pool's total liquidity
-- Your claim on accumulated fees
-- Your right to withdraw
+
+* Your share of the pool's total liquidity
+* Your claim on accumulated fees
+* Your right to withdraw
 
 ### Important Facts
 
-- **Keep them safe** — Losing LP tokens = losing your liquidity
-- **They're transferable** — Can be sent to other wallets
-- **Value changes** — Based on pool performance and token prices
-- **Fees compound** — Automatically added to the pool (no claiming needed)
+* **Keep them safe** — Losing LP tokens = losing your liquidity
+* **They're transferable** — Can be sent to other wallets
+* **Value changes** — Based on pool performance and token prices
+* **Fees compound** — Automatically added to the pool (no claiming needed)
 
----
+***
 
 ## Earning Fees
 
 ### How Fees Work
 
-| Network | Pool Type | Fee Rate |
-|---------|-----------|----------|
-| Base | Classic V2 | 0.3% per swap |
-| Base | Concentrated V3 | 0.05% / 0.3% / 1% |
-| Keeta | AMM | 0.3% per swap |
-| Keeta | Anchor | Custom (0.01% - 10%) |
+| Network | Pool Type       | Fee Rate             |
+| ------- | --------------- | -------------------- |
+| Base    | Classic V2      | 0.3% per swap        |
+| Base    | Concentrated V3 | 0.05% / 0.3% / 1%    |
+| Keeta   | AMM             | 0.3% per swap        |
+| Keeta   | Anchor          | Custom (0.01% - 10%) |
 
 ### Fee Distribution
 
 Fees are distributed proportionally based on your share of the pool.
 
 **Example:**
-- Pool has $100,000 total liquidity
-- You provided $10,000 (10% share)
-- Pool earns $100 in fees
-- You earn $10 (10% of fees)
+
+* Pool has $100,000 total liquidity
+* You provided $10,000 (10% share)
+* Pool earns $100 in fees
+* You earn $10 (10% of fees)
 
 ### When You Receive Fees
 
-- **Classic/AMM Pools**: Fees automatically compound into the pool. You receive them when you withdraw.
-- **Concentrated Positions**: Fees accumulate separately and can be claimed anytime.
-- **Anchor Pools**: Fees compound into your pool reserves.
+* **Classic/AMM Pools**: Fees automatically compound into the pool. You receive them when you withdraw.
+* **Concentrated Positions**: Fees accumulate separately and can be claimed anytime.
+* **Anchor Pools**: Fees compound into your pool reserves.
 
----
+***
 
 ## Impermanent Loss
 
@@ -186,29 +191,31 @@ Impermanent loss occurs when the price ratio of your deposited tokens changes. Y
 ### Example
 
 You deposit:
-- 1 ETH ($2,000)
-- 2,000 USDC
-- Total: $4,000
+
+* 1 ETH ($2,000)
+* 2,000 USDC
+* Total: $4,000
 
 ETH price doubles to $4,000:
-- If you had just held: 1 ETH ($4,000) + 2,000 USDC = $6,000
-- In the pool: ~0.71 ETH ($2,828) + 2,828 USDC = $5,656
-- Impermanent loss: ~$344 (5.7%)
+
+* If you had just held: 1 ETH ($4,000) + 2,000 USDC = $6,000
+* In the pool: \~0.71 ETH ($2,828) + 2,828 USDC = $5,656
+* Impermanent loss: \~$344 (5.7%)
 
 ### Key Points
 
-- Called "impermanent" because it reverses if prices return to original ratio
-- Becomes "permanent" when you withdraw at different price ratios
-- **Trading fees can offset impermanent loss** — If you earn more in fees than you lose to IL, you're still profitable
+* Called "impermanent" because it reverses if prices return to original ratio
+* Becomes "permanent" when you withdraw at different price ratios
+* **Trading fees can offset impermanent loss** — If you earn more in fees than you lose to IL, you're still profitable
 
 ### Minimizing Impermanent Loss
 
-- Provide liquidity to **stable pairs** (USDC/USDT) — minimal price divergence
-- Choose **correlated assets** — tokens that move together
-- Use **concentrated positions** strategically
-- **Monitor your positions** — withdraw if IL exceeds fee earnings
+* Provide liquidity to **stable pairs** (USDC/USDT) — minimal price divergence
+* Choose **correlated assets** — tokens that move together
+* Use **concentrated positions** strategically
+* **Monitor your positions** — withdraw if IL exceeds fee earnings
 
----
+***
 
 ## Best Practices
 
