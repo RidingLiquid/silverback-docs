@@ -2,17 +2,17 @@
 
 Get connected to Silverback DEX in under 2 minutes.
 
----
+***
 
 ## Base Network
 
 Silverback DEX supports all major Web3 wallets on Base:
 
-- **MetaMask**
-- **Coinbase Wallet**
-- **WalletConnect** (supports 300+ wallets)
-- **Rainbow**
-- **And more...**
+* **MetaMask**
+* **Coinbase Wallet**
+* **WalletConnect** (supports 300+ wallets)
+* **Rainbow**
+* **And more...**
 
 ### Steps
 
@@ -26,17 +26,17 @@ Silverback DEX supports all major Web3 wallets on Base:
 
 If Base isn't already in your wallet:
 
-| Setting | Value |
-|---------|-------|
-| Network Name | Base |
-| RPC URL | `https://mainnet.base.org` |
-| Chain ID | 8453 |
-| Currency Symbol | ETH |
-| Block Explorer | `https://basescan.org` |
+| Setting         | Value                      |
+| --------------- | -------------------------- |
+| Network Name    | Base                       |
+| RPC URL         | `https://mainnet.base.org` |
+| Chain ID        | 8453                       |
+| Currency Symbol | ETH                        |
+| Block Explorer  | `https://basescan.org`     |
 
 > **Tip:** Most wallets will automatically prompt you to add Base when you connect to Silverback.
 
----
+***
 
 ## Keeta Network
 
@@ -50,28 +50,28 @@ Keeta uses the **Keythings** wallet extension.
 
 ### Connect to Silverback
 
-1. Access the DEX at `localhost:3000` (required for Keythings)
+1. Access the DEX&#x20;
 2. Keythings will automatically detect and connect
 3. Approve the connection if prompted
 
-> **Note:** Keythings currently only works with allowlisted URLs. The localhost requirement is temporary during the beta phase.
-
----
+***
 
 ## Troubleshooting
 
 **Wallet not connecting?**
-- Refresh the page
-- Make sure you're on the correct network
-- Check if your wallet is locked
+
+* Refresh the page
+* Make sure you're on the correct network
+* Check if your wallet is locked
 
 **MetaMask stuck?**
-- Try disconnecting and reconnecting
-- Clear your MetaMask activity data (Settings → Advanced → Clear Activity)
+
+* Try disconnecting and reconnecting
+* Clear your MetaMask activity data (Settings → Advanced → Clear Activity)
 
 **Keythings not detected?**
-- Ensure you're on `localhost:3000`
-- Check the extension is enabled
-- Try refreshing the page
+
+* Check the extension is enabled
+* Try refreshing the page
 
 See our full [Troubleshooting](../faq-troubleshooting/troubleshooting.md) guide for more help.

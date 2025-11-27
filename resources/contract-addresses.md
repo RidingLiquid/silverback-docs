@@ -2,54 +2,55 @@
 
 Verified smart contract addresses for Silverback.
 
----
+***
 
 ## ⚠️ Security Notice
 
 **Always verify contract addresses before interacting.**
 
-- Only use addresses from this official documentation
-- Never trust addresses shared in DMs or unofficial channels
-- Bookmark this page for reference
+* Only use addresses from this official documentation
+* Never trust addresses shared in DMs or unofficial channels
+* Bookmark this page for reference
 
----
+***
 
 ## Base Network
 
 ### $BACK Token
 
-| Property | Value |
-|----------|-------|
-| Contract | *To be added after launch* |
-| Network | Base (Chain ID: 8453) |
+| Property | Value                            |
+| -------- | -------------------------------- |
+| Contract | _To be added after launch_       |
+| Network  | Base (Chain ID: 8453)            |
 | Explorer | [BaseScan](https://basescan.org) |
 
 ### DEX Contracts
 
-| Contract | Address |
-|----------|---------|
-| Router | *To be added* |
-| Factory | *To be added* |
-| WETH | `0x4200000000000000000000000000000000000006` |
+| Contract   | Address                                                         |
+| ---------- | --------------------------------------------------------------- |
+| Aggregator | <sup><sub>0x565cBf0F3eAdD873212Db91896e9a548f6D64894<sub></sup> |
+| Factory    | <sup><sub>0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae<sub></sup> |
+| Router     | <sup><sub>0x07d00debE946d9183A4dB7756A8A54582c6F205b<sub></sup> |
+| WETH       | `0x4200000000000000000000000000000000000006`                    |
 
----
+***
 
 ## Keeta Network
 
-| Contract | Address |
-|----------|---------|
-| AMM Router | *To be added* |
-| Anchor Factory | *To be added* |
+| Contract       | Address       |
+| -------------- | ------------- |
+| AMM Router     | _To be added_ |
+| Anchor Factory | _To be added_ |
 
----
+***
 
 ## Virtuals Protocol
 
-| Contract | Address |
-|----------|---------|
-| Agent Token | *To be added after launch* |
+| Contract    | Address                    |
+| ----------- | -------------------------- |
+| Agent Token | _To be added after launch_ |
 
----
+***
 
 ## Verifying Contracts
 
@@ -63,11 +64,12 @@ Verified smart contract addresses for Silverback.
 ### In Your Wallet
 
 Before approving transactions:
+
 1. Check the contract address matches official addresses
 2. Verify you're on the correct network
 3. Review what permissions you're granting
 
----
+***
 
 ## Adding Tokens to Wallet
 
@@ -80,7 +82,7 @@ Before approving transactions:
 5. Token symbol and decimals should auto-fill
 6. Click "Add Custom Token"
 
----
+***
 
 ## Updates
 
