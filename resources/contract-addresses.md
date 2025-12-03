@@ -26,29 +26,29 @@ Verified smart contract addresses for Silverback.
 
 ### DEX Contracts
 
-| Contract   | Address                                                         |
-| ---------- | --------------------------------------------------------------- |
-| Aggregator | <sup><sub>0x565cBf0F3eAdD873212Db91896e9a548f6D64894<sub></sup> |
-| Factory    | <sup><sub>0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae<sub></sup> |
-| Router     | <sup><sub>0x07d00debE946d9183A4dB7756A8A54582c6F205b<sub></sup> |
-| WETH       | `0x4200000000000000000000000000000000000006`                    |
+| Contract   | Address                                                                                                                          |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Aggregator | [<sup>0x565cBf0F3eAdD873212Db91896e9a548f6D64894</sup>](https://basescan.org/address/0x565cbf0f3eadd873212db91896e9a548f6d64894) |
+| Factory    | [<sup>0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae</sup>](https://basescan.org/address/0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae) |
+| Router     | [<sup>0x07d00debE946d9183A4dB7756A8A54582c6F205b</sup>](https://basescan.org/address/0x07d00debe946d9183a4db7756a8a54582c6f205b) |
 
 ***
 
 ## Keeta Network
 
-| Contract       | Address       |
-| -------------- | ------------- |
-| AMM Router     | _To be added_ |
-| Anchor Factory | _To be added_ |
+| Contract          | Address                                                                                                                                                                            |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Silverback Router | [keeta\_aabwgiqyij4scwktdoczzvhpi33btieeses5sezeqzqmpi5ik76ttyegwuvfsai](https://explorer.keeta.com/account/keeta_aabwgiqyij4scwktdoczzvhpi33btieeses5sezeqzqmpi5ik76ttyegwuvfsai) |
+| Treasury          | [keeta\_aabaolle2k3hceayy4vkyw7smgl35o5wbqeebt2fibyx5sxxodneqb2rmwqkjci](https://explorer.keeta.com/account/keeta_aabaolle2k3hceayy4vkyw7smgl35o5wbqeebt2fibyx5sxxodneqb2rmwqkjci) |
+|                   |                                                                                                                                                                                    |
 
 ***
 
 ## Virtuals Protocol
 
-| Contract    | Address                    |
-| ----------- | -------------------------- |
-| Agent Token | _To be added after launch_ |
+| Contract           | Address                                                                                                                          |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| SIlverback - $BACK | [<sup>0x558881c4959e9cf961a7E1815FCD6586906babd2</sup>](https://basescan.org/address/0x558881c4959e9cf961a7E1815FCD6586906babd2) |
 
 ***
 
