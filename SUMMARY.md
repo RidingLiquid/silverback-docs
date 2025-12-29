@@ -30,6 +30,7 @@
 * [Meet Silverback](silverback-agent/meet-silverback.md)
 * [How It Works](silverback-agent/how-it-works.md)
 * [Treasury & Trading](silverback-agent/treasury-trading.md)
+* [sbUSDC Yield Vault](silverback-agent/sbusdc-yield-vault.md)
 
 ## Support
 
