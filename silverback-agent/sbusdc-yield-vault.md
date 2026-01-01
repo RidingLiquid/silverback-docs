@@ -130,22 +130,16 @@ share_price = total_assets / total_supply
 
 ## Contract Addresses
 
-### Base Sepolia (Testnet)
-
-| Contract     | Address                                      |
-| ------------ | -------------------------------------------- |
-| sbUSDC Vault | `0xADACac4C81D0290Dac215f0B9923140f4AeC4901` |
-| MockStrategy | `0x0A74a5366F6ddEd86E26c4237953BFbc7E07A257` |
-| USDC         | `0x036CbD53842c5426634e7929541eC2318f3dCF7e` |
-
 ### Base Mainnet (Production)
 
-| Contract           | Address                                      |
-| ------------------ | -------------------------------------------- |
-| sbUSDC Vault       | _Coming Soon_                                |
-| SilverbackStrategy | _Coming Soon_                                |
-| USDC               | `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913` |
-| Morpho Blue        | `0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb` |
+| Contract | Address |
+|----------|---------|
+| sbUSDC Vault | [`0x9d520e2b373588917B083E75A425A48b69dFC06a`](https://basescan.org/address/0x9d520e2b373588917B083E75A425A48b69dFC06a) |
+| SilverbackStrategy | [`0x50E2FEeE58Ecf30373c78aB90754604022d03C4c`](https://basescan.org/address/0x50E2FEeE58Ecf30373c78aB90754604022d03C4c) |
+| USDC | [`0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`](https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913) |
+| Morpho Blue | [`0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb`](https://basescan.org/address/0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb) |
+
+**Market ID (cbBTC/USDC):** `0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836`
 
 ## Using sbUSDC
 

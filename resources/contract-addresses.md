@@ -24,11 +24,11 @@ Verified smart contract addresses for Silverback.
 
 <table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>Aggregator</td><td><a href="https://basescan.org/address/0x565cbf0f3eadd873212db91896e9a548f6d64894">0x565cBf0F3eAdD873212Db91896e9a548f6D64894</a></td></tr><tr><td>Factory</td><td><a href="https://basescan.org/address/0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae">0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae</a></td></tr><tr><td>Router</td><td><a href="https://basescan.org/address/0x07d00debe946d9183a4db7756a8a54582c6f205b">0x07d00debE946d9183A4dB7756A8A54582c6F205b</a></td></tr></tbody></table>
 
-### sbUSDC Yield Vault (Testnet)
+### sbUSDC Yield Vault
 
-<table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>sbUSDC Vault</td><td><a href="https://sepolia.basescan.org/address/0xADACac4C81D0290Dac215f0B9923140f4AeC4901">0xADACac4C81D0290Dac215f0B9923140f4AeC4901</a></td></tr><tr><td>MockStrategy</td><td><a href="https://sepolia.basescan.org/address/0x0A74a5366F6ddEd86E26c4237953BFbc7E07A257">0x0A74a5366F6ddEd86E26c4237953BFbc7E07A257</a></td></tr><tr><td>USDC (Testnet)</td><td><a href="https://sepolia.basescan.org/address/0x036CbD53842c5426634e7929541eC2318f3dCF7e">0x036CbD53842c5426634e7929541eC2318f3dCF7e</a></td></tr></tbody></table>
+<table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>sbUSDC Vault</td><td><a href="https://basescan.org/address/0x9d520e2b373588917B083E75A425A48b69dFC06a">0x9d520e2b373588917B083E75A425A48b69dFC06a</a></td></tr><tr><td>SilverbackStrategy</td><td><a href="https://basescan.org/address/0x50E2FEeE58Ecf30373c78aB90754604022d03C4c">0x50E2FEeE58Ecf30373c78aB90754604022d03C4c</a></td></tr><tr><td>Morpho Blue</td><td><a href="https://basescan.org/address/0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb">0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb</a></td></tr></tbody></table>
 
-> **Note:** sbUSDC mainnet contracts coming soon.
+> **Strategy:** Supplies USDC to Morpho Blue cbBTC/USDC lending market for yield generation.
 
 ***
 
@@ -76,4 +76,4 @@ Before approving transactions:
 
 This page will be updated with contract addresses as they are deployed.
 
-Last updated: December 2025
+Last updated: January 2026
