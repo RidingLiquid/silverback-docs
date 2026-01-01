@@ -7,10 +7,11 @@ Silverback's ERC-4626 tokenized yield vault that automatically generates yield o
 sbUSDC is a yield-bearing token. When you deposit USDC, you receive sbUSDC shares. As yield accrues from lending markets, your shares become worth more USDC - no action required.
 
 **Key Features:**
-- Automatic yield generation (5-10% APY)
-- Non-custodial - your funds stay in smart contracts
-- Withdraw anytime
-- Built on Morpho Blue lending protocol
+
+* Automatic yield generation (5-10% APY)
+* Non-custodial - your funds stay in smart contracts
+* Withdraw anytime
+* Built on Morpho Blue lending protocol
 
 ## How It Works
 
@@ -43,45 +44,44 @@ sbUSDC is a yield-bearing token. When you deposit USDC, you receive sbUSDC share
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────┐
-│                           SILVERBACK CONTRACTS                              │
+│                           SILVERBACK CONTRACTS                             │
 ├────────────────────────────────────────────────────────────────────────────┤
 │                                                                            │
-│   ┌──────────────┐         ┌────────────────────┐                         │
-│   │   sbUSDC     │         │ SilverbackStrategy │                         │
-│   │   Vault      │◄───────►│                    │                         │
-│   │              │         │  - deposit()       │                         │
-│   │ ERC-4626     │         │  - withdraw()      │                         │
-│   │ - deposit()  │         │  - balanceOf()     │                         │
-│   │ - withdraw() │         │                    │                         │
-│   │ - redeem()   │         │  (uses Morpho)     │                         │
-│   └──────────────┘         └─────────┬──────────┘                         │
-│                                     │                                      │
-└─────────────────────────────────────┼──────────────────────────────────────┘
-                                      │
-                                      ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                         MORPHO BLUE (External)                              │
-│                    0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb               │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
+│   ┌──────────────┐         ┌────────────────────┐                          │
+│   │   sbUSDC     │         │ SilverbackStrategy │                          │
+│   │   Vault      │◄───────►│                    │                          │
+│   │              │         │  - deposit()       │                          │
+│   │ ERC-4626     │         │  - withdraw()      │                          │
+│   │ - deposit()  │         │  - balanceOf()     │                          │
+│   │ - withdraw() │         │                    │                          │
+│   │ - redeem()   │         │  (uses Morpho)     │                          │
+│   └──────────────┘         └─────────┬──────────┘                          │
+│                                      │                                     │
+└───────────────────────────────────── ┼─────────────────────────────────────┘
+│                                      ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                         MORPHO BLUE (External)                             │
+│                    0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb              │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
 │   ┌─────────────────────────────────────────────────────────────────┐      │
-│   │                    Lending Markets                               │      │
+│   │                    Lending Markets                              │      │
 │   ├─────────────────────────────────────────────────────────────────┤      │
 │   │  cbBTC/USDC Market     │  Borrowers deposit cbBTC collateral    │      │
 │   │  ─────────────────     │  borrow USDC, pay ~8% interest         │      │
 │   │  Our USDC goes here ──►│                                        │      │
 │   │                        │  Interest paid ──► grows our balance   │      │
 │   ├─────────────────────────────────────────────────────────────────┤      │
-│   │  WETH/USDC Market      │  Similar - ETH collateral             │      │
-│   │  wstETH/USDC Market    │  Similar - staked ETH collateral      │      │
+│   │  WETH/USDC Market      │  Similar - ETH collateral              │      │
+│   │  wstETH/USDC Market    │  Similar - staked ETH collateral       │      │
 │   └─────────────────────────────────────────────────────────────────┘      │
-│                                                                             │
-│   Interest Rate Model:                                                      │
+│                                                                            │
+│   Interest Rate Model:                                                     │
 │   - Low utilization  → ~2-3% borrow rate                                   │
 │   - High utilization → ~10-15% borrow rate                                 │
-│   - Supply APY = Borrow Rate × Utilization                                  │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
+│   - Supply APY = Borrow Rate × Utilization                                 │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ## Where Does Yield Come From?
@@ -96,12 +96,12 @@ The yield comes from **borrowers paying interest** on Morpho Blue lending market
 ### Expected Returns
 
 | Market Conditions | Typical APY |
-|-------------------|-------------|
+| ----------------- | ----------- |
 | Low utilization   | 3-5%        |
 | Normal            | 5-8%        |
 | High demand       | 8-12%       |
 
-*APY varies based on market conditions and borrower demand*
+_APY varies based on market conditions and borrower demand_
 
 ## How Share Price Works
 
@@ -132,20 +132,20 @@ share_price = total_assets / total_supply
 
 ### Base Sepolia (Testnet)
 
-| Contract | Address |
-|----------|---------|
+| Contract     | Address                                      |
+| ------------ | -------------------------------------------- |
 | sbUSDC Vault | `0xADACac4C81D0290Dac215f0B9923140f4AeC4901` |
 | MockStrategy | `0x0A74a5366F6ddEd86E26c4237953BFbc7E07A257` |
-| USDC | `0x036CbD53842c5426634e7929541eC2318f3dCF7e` |
+| USDC         | `0x036CbD53842c5426634e7929541eC2318f3dCF7e` |
 
 ### Base Mainnet (Production)
 
-| Contract | Address |
-|----------|---------|
-| sbUSDC Vault | *Coming Soon* |
-| SilverbackStrategy | *Coming Soon* |
-| USDC | `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913` |
-| Morpho Blue | `0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb` |
+| Contract           | Address                                      |
+| ------------------ | -------------------------------------------- |
+| sbUSDC Vault       | _Coming Soon_                                |
+| SilverbackStrategy | _Coming Soon_                                |
+| USDC               | `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913` |
+| Morpho Blue        | `0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb` |
 
 ## Using sbUSDC
 
@@ -183,42 +183,43 @@ const usdcReceived = await vault.redeem(shares, yourAddress, yourAddress);
 
 ### Non-Custodial
 
-- All funds are held in smart contracts on-chain
-- No centralized party can access your funds
-- You can withdraw anytime (subject to liquidity)
+* All funds are held in smart contracts on-chain
+* No centralized party can access your funds
+* You can withdraw anytime (subject to liquidity)
 
 ### Risks
 
-| Risk | Description |
-|------|-------------|
-| Smart Contract | Bugs in sbUSDC, Strategy, or Morpho contracts |
-| Liquidity | If all USDC is lent out, withdrawals may be delayed |
-| Market | APY fluctuates based on market conditions |
-| Oracle | Morpho relies on price oracles for collateral valuation |
+| Risk           | Description                                             |
+| -------------- | ------------------------------------------------------- |
+| Smart Contract | Bugs in sbUSDC, Strategy, or Morpho contracts           |
+| Liquidity      | If all USDC is lent out, withdrawals may be delayed     |
+| Market         | APY fluctuates based on market conditions               |
+| Oracle         | Morpho relies on price oracles for collateral valuation |
 
 ### Audits
 
-- **Morpho Blue**: Audited by Spearbit, Trail of Bits, Cantina
-- **sbUSDC Vault**: Pending external audit
+* **Morpho Blue**: Audited by Spearbit, Trail of Bits, Cantina
+* **sbUSDC Vault**: Pending external audit
 
 ### Test Coverage
 
 The sbUSDC vault has comprehensive test coverage:
 
-| Category | Tests | Status |
-|----------|-------|--------|
-| Vault Core (deposits, withdrawals, yield) | 23 | Passing |
-| Security & Edge Cases | 15 | Passing |
-| **Total** | **38** | **All Passing** |
+| Category                                  | Tests  | Status          |
+| ----------------------------------------- | ------ | --------------- |
+| Vault Core (deposits, withdrawals, yield) | 23     | Passing         |
+| Security & Edge Cases                     | 15     | Passing         |
+| **Total**                                 | **38** | **All Passing** |
 
 **Security tests include:**
-- Reentrancy protection
-- Share price manipulation resistance
-- Allowance/approval checks
-- Zero value edge cases
-- Large value handling (overflow protection)
-- Multiple deposit/withdraw cycles
-- Strategy interaction safety
+
+* Reentrancy protection
+* Share price manipulation resistance
+* Allowance/approval checks
+* Zero value edge cases
+* Large value handling (overflow protection)
+* Multiple deposit/withdraw cycles
+* Strategy interaction safety
 
 ## FAQ
 
