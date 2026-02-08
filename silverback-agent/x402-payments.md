@@ -140,13 +140,83 @@ These endpoints are available without payment:
 
 ---
 
-## Settlement
+## Silverback Facilitator
 
-- **Network:** Base (Chain ID 8453)
-- **Confirmation:** ~2 seconds (1 block)
-- **Facilitator:** Silverback operates its own payment facilitator
-- **Fee Splitter:** Payments route through an on-chain fee splitter that handles fee separation automatically
-- **Transaction hash** is returned in the response headers after successful payment
+Silverback operates its own **x402 payment facilitator** — the service that verifies, settles, and confirms payments on-chain. This means Silverback controls the full payment stack, with no reliance on third-party facilitators.
+
+**Facilitator URL:** `https://facilitator.silverbackdefi.app`
+
+### What the Facilitator Does
+
+When you send a signed payment with your API request:
+
+1. **Verify** — The facilitator checks that your signature is valid, the token is whitelisted, and the amount covers the endpoint price
+2. **Settle** — It submits the payment transaction on-chain (Base), transferring tokens from your wallet to the fee splitter
+3. **Confirm** — Once the transaction is confirmed (~2 seconds), it returns a receipt with the transaction hash
+
+You never interact with the facilitator directly — the x402 SDK and Silverback's API server handle this automatically.
+
+### Payment Protocols
+
+The facilitator supports two settlement protocols:
+
+| Protocol | Used For | How It Works |
+|----------|----------|-------------|
+| **ERC-3009** | USDC | `transferWithAuthorization` — no approvals needed, sign-and-pay in one step |
+| **Permit2** | All other tokens | `permitWitnessTransferFrom` — requires a one-time ERC-20 approval to Permit2 |
+
+When you pay with USDC, the x402 SDK uses ERC-3009 for the simplest experience. For any other token (BACK, USDT, DAI, VIRTUAL, WETH, cbBTC), it uses Permit2.
+
+### Fee Splitter
+
+All payments route through Silverback's on-chain **Fee Splitter** contract on Base:
+
+```
+Your Wallet → Fee Splitter Contract → splits into:
+  ├── Net payment → Silverback Treasury (for buybacks & operations)
+  └── Settlement fee → Protocol fee recipient
+```
+
+- **$BACK payments:** No fee is taken — 100% goes to treasury
+- **Stablecoin payments (USDC, USDT, DAI):** 0.1% fee
+- **Blue-chip payments (WETH, cbBTC):** 0.25% fee
+- **Ecosystem tokens (VIRTUAL):** 0.1% fee
+
+The fee split happens atomically on-chain — there's no manual step or delay.
+
+### Token Whitelisting
+
+The facilitator only accepts **curated, whitelisted tokens**. This protects against scam tokens and ensures reliable settlement. The current whitelist includes 8 tokens across stablecoins, ecosystem tokens, and blue-chip assets.
+
+New tokens can apply for listing on a case-by-case basis.
+
+### Facilitator Public Endpoints
+
+The facilitator exposes several informational endpoints (no payment required):
+
+| Endpoint | Description |
+|----------|-------------|
+| [`/health`](https://facilitator.silverbackdefi.app/health) | Facilitator status, fee model, and configuration |
+| [`/supported`](https://facilitator.silverbackdefi.app/supported) | Supported networks, tokens, and x402 version |
+| [`/supported/tokens`](https://facilitator.silverbackdefi.app/supported/tokens) | All accepted tokens with live USD prices |
+| [`/supported/convert?usd=0.02&token=BACK`](https://facilitator.silverbackdefi.app/supported/convert?usd=0.02&token=BACK) | Convert a USD amount to any token |
+| [`/settle/stats`](https://facilitator.silverbackdefi.app/settle/stats) | Total settlements, volume, and success rate |
+| [`/discovery/resources`](https://facilitator.silverbackdefi.app/discovery/resources) | Browse all available paid resources |
+
+### Settlement Details
+
+| Property | Value |
+|----------|-------|
+| Network | Base (Chain ID 8453) |
+| Confirmation | ~2 seconds (1 block) |
+| x402 Version | 2 |
+| Scheme | Exact |
+| Facilitator Address | `0x48380bCf1c09773C9E96901F89A7A6B75E2BBeCC` |
+| Fee Splitter | `0x6FDf52EA446B54508f50C35612210c69Ef1C1d9a` |
+| Permit2 | `0x000000000022D473030F116dDEE9F6B43aC78BA3` |
+| Treasury | `0xD34411a70EffbDd000c529bbF572082ffDcF1794` |
+
+After a successful payment, the transaction hash is returned in the `payment-response` header so you can verify settlement on [BaseScan](https://basescan.org).
 
 ---
 

@@ -26,7 +26,7 @@ Verified smart contract addresses for Silverback.
 
 ### x402 Payment Infrastructure
 
-<table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>Fee Splitter</td><td><a href="https://basescan.org/address/0x6FDf52EA446B54508f50C35612210c69Ef1C1d9a">0x6FDf52EA446B54508f50C35612210c69Ef1C1d9a</a></td></tr><tr><td>Permit2</td><td><a href="https://basescan.org/address/0x000000000022D473030F116dDEE9F6B43aC78BA3">0x000000000022D473030F116dDEE9F6B43aC78BA3</a></td></tr></tbody></table>
+<table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>Facilitator Wallet</td><td><a href="https://basescan.org/address/0x48380bCf1c09773C9E96901F89A7A6B75E2BBeCC">0x48380bCf1c09773C9E96901F89A7A6B75E2BBeCC</a></td></tr><tr><td>Fee Splitter</td><td><a href="https://basescan.org/address/0x6FDf52EA446B54508f50C35612210c69Ef1C1d9a">0x6FDf52EA446B54508f50C35612210c69Ef1C1d9a</a></td></tr><tr><td>Treasury</td><td><a href="https://basescan.org/address/0xD34411a70EffbDd000c529bbF572082ffDcF1794">0xD34411a70EffbDd000c529bbF572082ffDcF1794</a></td></tr><tr><td>Permit2</td><td><a href="https://basescan.org/address/0x000000000022D473030F116dDEE9F6B43aC78BA3">0x000000000022D473030F116dDEE9F6B43aC78BA3</a></td></tr></tbody></table>
 
 > **Fee Splitter** handles automatic fee separation for x402 micropayments. See [Paid API (x402)](../silverback-agent/x402-payments.md) for details.
 
