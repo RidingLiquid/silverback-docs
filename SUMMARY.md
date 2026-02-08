@@ -30,6 +30,7 @@
 * [Meet Silverback](silverback-agent/meet-silverback.md)
 * [How It Works](silverback-agent/how-it-works.md)
 * [Paid API (x402)](silverback-agent/x402-payments.md)
+* [Seller Integration](silverback-agent/seller-integration.md)
 * [Treasury & Trading](silverback-agent/treasury-trading.md)
 * [sbUSDC Yield Vault](silverback-agent/sbusdc-yield-vault.md)
 

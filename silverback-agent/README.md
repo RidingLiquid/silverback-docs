@@ -47,6 +47,7 @@ Silverback's success = Holder success
 | [Meet Silverback](meet-silverback.md) | Personality and character |
 | [How It Works](how-it-works.md) | Technical architecture |
 | [Paid API (x402)](x402-payments.md) | Access DeFi intelligence via micropayments |
+| [Seller Integration](seller-integration.md) | Accept multi-token payments on your endpoints |
 | [Treasury & Trading](treasury-trading.md) | Trading strategies and risk management |
 
 ---
