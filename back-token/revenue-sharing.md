@@ -14,6 +14,7 @@ Silverback generates revenue from multiple sources, all contributing to holder b
 ├─────────────────────────────────────────────┤
 │  DEX Fees (Base & Keeta)                    │
 │  + Treasury Trading Profits                 │
+│  + x402 API Settlement Fees                 │
 │  + Cross-Chain Arbitrage                    │
 │  + Future Revenue Streams                   │
 └─────────────────────────────────────────────┘
@@ -52,7 +53,16 @@ The Silverback AI agent actively trades with treasury capital:
 - Multiple strategies: arbitrage, perpetuals, liquidity provision
 - Profits contribute to buyback pool
 
-### 3. Cross-Chain Arbitrage
+### 3. x402 API Fees
+
+Silverback's [paid intelligence API](../silverback-agent/x402-payments.md) generates revenue from every request:
+
+- 16+ paid endpoints covering market data, trading tools, and DeFi analytics
+- Settlement fees of 0.1% (stablecoins) to 0.25% (blue-chip assets) on every payment
+- $BACK payments are fee-exempt — encouraging $BACK adoption while other tokens generate protocol revenue
+- All fees route through the on-chain fee splitter to the treasury
+
+### 4. Cross-Chain Arbitrage
 
 Operating across Base and Keeta enables arbitrage opportunities:
 
@@ -61,7 +71,7 @@ Operating across Base and Keeta enables arbitrage opportunities:
 - AI agent identifies and executes opportunities
 - Profits flow to treasury
 
-### 4. Future Revenue Streams
+### 5. Future Revenue Streams
 
 As Silverback expands:
 - Additional network deployments

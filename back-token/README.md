@@ -22,7 +22,15 @@ $BACK holders benefit from multiple revenue streams:
 
 * **DEX Protocol Fees** — Portion of swap fees across all pools
 * **Treasury Trading Profits** — Returns from Silverback AI agent's trading
+* **x402 API Fees** — Settlement fees from paid intelligence endpoints
 * **Cross-Chain Arbitrage** — Profits from multi-network opportunities
+
+### x402 Payment Discount
+
+Pay with $BACK for Silverback's [paid API endpoints](../silverback-agent/x402-payments.md) and receive:
+
+* **Zero settlement fees** — other tokens pay 0.1% to 0.25%
+* **20% discount** on every endpoint
 
 ### Staking Rewards
 

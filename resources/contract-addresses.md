@@ -24,6 +24,12 @@ Verified smart contract addresses for Silverback.
 
 <table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>Aggregator</td><td><a href="https://basescan.org/address/0x565cbf0f3eadd873212db91896e9a548f6d64894">0x565cBf0F3eAdD873212Db91896e9a548f6D64894</a></td></tr><tr><td>Factory</td><td><a href="https://basescan.org/address/0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae">0x9cd714C51586B52DD56EbD19E3676de65eBf44Ae</a></td></tr><tr><td>Router</td><td><a href="https://basescan.org/address/0x07d00debe946d9183a4db7756a8a54582c6f205b">0x07d00debE946d9183A4dB7756A8A54582c6F205b</a></td></tr></tbody></table>
 
+### x402 Payment Infrastructure
+
+<table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>Fee Splitter</td><td><a href="https://basescan.org/address/0x6FDf52EA446B54508f50C35612210c69Ef1C1d9a">0x6FDf52EA446B54508f50C35612210c69Ef1C1d9a</a></td></tr><tr><td>Permit2</td><td><a href="https://basescan.org/address/0x000000000022D473030F116dDEE9F6B43aC78BA3">0x000000000022D473030F116dDEE9F6B43aC78BA3</a></td></tr></tbody></table>
+
+> **Fee Splitter** handles automatic fee separation for x402 micropayments. See [Paid API (x402)](../silverback-agent/x402-payments.md) for details.
+
 ### sbUSDC Yield Vault
 
 <table><thead><tr><th width="244">Contract</th><th>Address</th></tr></thead><tbody><tr><td>sbUSDC Vault</td><td><a href="https://basescan.org/address/0x9d520e2b373588917B083E75A425A48b69dFC06a">0x9d520e2b373588917B083E75A425A48b69dFC06a</a></td></tr><tr><td>SilverbackStrategy</td><td><a href="https://basescan.org/address/0x50E2FEeE58Ecf30373c78aB90754604022d03C4c">0x50E2FEeE58Ecf30373c78aB90754604022d03C4c</a></td></tr><tr><td>Morpho Blue</td><td><a href="https://basescan.org/address/0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb">0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb</a></td></tr></tbody></table>
@@ -76,4 +82,4 @@ Before approving transactions:
 
 This page will be updated with contract addresses as they are deployed.
 
-Last updated: January 2026
+Last updated: February 2026
